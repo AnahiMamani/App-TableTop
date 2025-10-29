@@ -17,7 +17,7 @@ export default function LoginScreen() {
   const handleLogin = () => {
     if (senha === "12") {
       setErro("");
-      router.push("/drawer/tabs/feed"); // leva direto ao feed
+      router.replace("/drawer/tabs/feed"); // leva direto ao feed
     } else {
       setErro("Senha incorreta! Tente novamente.");
     }
